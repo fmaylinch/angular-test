@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularTestApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular Example</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="angular.min.js"></script>
+</head>
+<body ng-controller="MainController">
+
+  <h1>Angular Example</h1>
+
+  <p ng-class="paragraphClass">The controller says: {{ message }}</p>
+
+  <button ng-click="changeMessage()">Click</button> (Clicked: {{ clicked }})
+
+  <p ng-show="clicked">This paragraph is shown when the button is clicked</p>
+
+  <p ng-hide="clicked">This paragraph is hidden when the button is clicked</p>
+
+  <hr>
+
+  <button ng-click="addOne()">Eat</button> {{ number }} almonds
+
+  <p ng-show="hasEatenTooMany()">Stop eating almonds!</p>
+
+  <hr>
+
+  <ul>
+    <li ng-repeat="name in names">
+      <span class="highlighted">{{name}}</span>
+    </li>
+  </ul>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>

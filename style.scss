@@ -1,0 +1,11 @@
+
+$main-color: rgb(28, 77, 45);
+$danger-color: red;
+
+body {
+  color: $main-color;
+}
+
+.highlighted {
+  color: $danger-color;
+}
